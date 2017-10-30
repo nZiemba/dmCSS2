@@ -57,6 +57,11 @@ h1{
   text-align: center;
   margin-bottom: .3rem;
 }
+#logo {
+	position: relative;
+	left: 300px;
+	top: 100px;
+}
 #roomba {
 	position: relative;
 	left: -800px;
