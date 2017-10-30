@@ -59,6 +59,67 @@ h1{
 }
 #roomba {
 	position: relative;
+	left: -800px;
+	top: 0px;
+	animation: roomba 7s linear .2s 1 forwards;
+	transform: rotate(90deg);
+}
+@keyframes roomba {
+	0%{
+		left: -800px;
+		transform: rotate(90deg);
+		top: 0px;
+	}
+	10%{
+		left: -550px;
+		transform: rotate(90deg);
+		top: 0px;
+	}
+	20%{
+		left: -550px;
+		transform: rotate(180deg);
+		top: 0px;
+	}
+	30% {
+		left: -550px;
+		transform: rotate(180deg);
+		top: 150px;
+	}
+	40% {
+		left: -550px;
+		transform: rotate(90deg);
+		top: 150px;
+	}
+	50{
+		transform: rotate(90deg);
+		top: 150px;
+		left: -250px;
+	}
+	60% {
+		transform: rotate(90deg);
+		top: 150px;
+		left: -250px;
+	}
+	70%{
+		transform: rotate(0deg);
+		top: 150px;
+		left: -250px;
+	}
+	80%{
+		transform: rotate(0deg);
+		top: 0px;
+		left: -250px;
+	}
+	90% {
+		transform: rotate(90deg);
+		top: 0px;
+		left: -250px;
+	}
+	100%{
+		left: -50px;
+		transform: rotate(90deg);
+		top: 0px;
+	}
 }
 #animation-area {
   width: 500px;
