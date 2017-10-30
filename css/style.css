@@ -57,16 +57,37 @@ h1{
   text-align: center;
   margin-bottom: .3rem;
 }
+#msg {
+	position: relative;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: rgb(13, 124, 7);
+	top: -100px;
+	left: 10px;
+	animation: text 1s ease-in 7.2s 1 forwards;
+}
+@keyframes text {
+	0% {
+		top: -100px;
+	}
+	92% {
+		top: 297px;
+	}
+	100%{
+		top: 270px;
+		left: 10px;
+	}
+}
 #logo {
 	position: relative;
 	left: 300px;
-	top: 100px;
+	top: 80px;
 }
 #roomba {
 	position: relative;
-	left: -800px;
+	left: -900px;
 	top: 0px;
-	animation: roomba 7s linear .2s 1 forwards;
+	animation: roomba 7.25s linear .2s 1 forwards;
 	transform: rotate(90deg);
 }
 @keyframes roomba {
@@ -75,54 +96,63 @@ h1{
 		transform: rotate(90deg);
 		top: 0px;
 	}
+	/*3%{
+		left: -700px;
+	}*/
+	5% {
+		left: -650px;
+	}
+	/*7%{
+		left: -600px;
+	}*/
 	10%{
-		left: -550px;
+		left: -500px;
 		transform: rotate(90deg);
 		top: 0px;
 	}
 	20%{
-		left: -550px;
+		left: -500px;
 		transform: rotate(180deg);
 		top: 0px;
 	}
 	30% {
-		left: -550px;
+		left: -500px;
 		transform: rotate(180deg);
-		top: 150px;
+		top: 200px;
 	}
 	40% {
-		left: -550px;
+		left: -500px;
 		transform: rotate(90deg);
-		top: 150px;
+		top: 200px;
 	}
-	50{
+	50% {
 		transform: rotate(90deg);
-		top: 150px;
-		left: -250px;
+		top: 200px;
+		left: -200px;
 	}
 	60% {
-		transform: rotate(90deg);
-		top: 150px;
-		left: -250px;
+		transform: rotate(0deg);
+		top: 200px;
+		left: -200px;
 	}
 	70%{
 		transform: rotate(0deg);
-		top: 150px;
-		left: -250px;
+		top: 0px;
+		left: -200px;
 	}
 	80%{
-		transform: rotate(0deg);
+		transform: rotate(90deg);
 		top: 0px;
-		left: -250px;
+		left: -200px;
 	}
 	90% {
 		transform: rotate(90deg);
 		top: 0px;
-		left: -250px;
+		left: 95px;
 	}
 	100%{
-		left: -50px;
-		transform: rotate(90deg);
+		left: 90px;
+		transform: rotate(180deg);
 		top: 0px;
 	}
 }
